@@ -2,8 +2,8 @@
 
 cat config.txt >> ~/.zshrc
 
-cp ~/Downloads/gindle/download ~/custom_tools/
+cp ~/Downloads/gindle-master/download ~/custom_tools/
 
-cp ~/Downloads/gindle/link_finder.py ~/custom_tools/
+cp ~/Downloads/gindle-master/link_finder.py ~/custom_tools/
 
 echo "The gindle is ready to rock"
