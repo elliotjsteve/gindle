@@ -19,6 +19,7 @@ search_link+="&lg_topic=libgen&open=0&view=simple&res=25&phrase=1&column=def"
 print(search_link)
 
 home = "Users/elliot/custom_tools"
+
 author_num=1
 
 title_num=2
@@ -36,7 +37,9 @@ size_num=7
 format_num=8
 
 link_num=9
+
 print('search_page retrieval: ')
+
 page=requests.get(search_link)
 
 page.raise_for_status()
@@ -77,7 +80,9 @@ book_num=int(input('Enter book_num: '))
 a_tag=book_elements[book_num][link_num].select('a')
 
 download_page=a_tag[0].get('href')
+
 print('download_page retrieval: ')
+
 dpage=requests.get(download_page)
 
 dpage.raise_for_status()
@@ -89,12 +94,9 @@ print('starting download now')
 all_things=bs4.BeautifulSoup(dpage.text,features="html.parser")
 
 main_link=all_things.select('h2 a')
-file_name=f"{home}/load.txt"
+
+file_name="load.txt"
 
 with open(file_name,'w') as file:
 
 	file.write(f"{urllib.parse.urlparse(download_page).netloc}{main_link[0].get('href')}")
-
-
-#for book in books:
-#	print(book[format_num])
