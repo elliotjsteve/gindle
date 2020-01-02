@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+rm ~/custom_tools/gindle ~/custom_tools/link_finder.py ~/custom_tools/load.txt
