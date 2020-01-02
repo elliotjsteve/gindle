@@ -8,7 +8,7 @@ echo 'finished executing python script'
 
 download_link=$(cat load.txt)
 
-wget -P ~/Downloads/ $download_link
+wget -P ~/Downloads/books/ $download_link
 
 rm load.txt
 
