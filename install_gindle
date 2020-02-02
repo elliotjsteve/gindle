@@ -9,3 +9,5 @@ cp ~/Downloads/gindle-master/gindle ~/custom_tools/
 cp ~/Downloads/gindle-master/link_finder.py ~/custom_tools/
 
 echo "The gindle is ready to rock"
+
+echo "\n-------------------------------________Just Type Gindle________-------------------------------\n"
